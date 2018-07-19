@@ -103,6 +103,10 @@ export default {
     });
   },
 
+  mounted(){
+    _this.trans = localStorage.getItem('trans')
+  },
+
   methods: {
     burn: function(){
       const _this = this
@@ -113,6 +117,7 @@ export default {
           alert('燃烧成功，你已获得 100 个 WHC，请前往发行Token')
           _this.burned = true
           _this.trans = res.data
+          localStorage.setItem('trans', _this.trans)
         }
       }).catch(e=>{
         console.error(e)
