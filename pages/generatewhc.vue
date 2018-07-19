@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <div class="transaction-line mt-30">
+    <div class="transaction-line mt-30 fs-16">
       <div>交易记录:</div>
       <a v-if="trans" :href="'https://www.blocktrail.com/tBCC/tx/'+trans" target="_blank">{{trans}}</a>
     </div>
