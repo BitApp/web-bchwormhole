@@ -24,7 +24,7 @@ import { mapState } from "vuex"
 export default {
   head() {
     return {
-      title: "广场"
+      title: "Token广场"
     }
   },
 
