@@ -104,7 +104,7 @@ export default {
   },
 
   mounted(){
-    _this.trans = localStorage.getItem('trans')
+    this.trans = localStorage.getItem('trans')
   },
 
   methods: {
