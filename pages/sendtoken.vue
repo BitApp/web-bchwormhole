@@ -73,7 +73,7 @@
             </b-form-input>
           </b-form-group>
           <div class="button-line clearfix">
-            <b-button size="lg" class="mt-10 fr" :disabled="!(name && url && desc && amount && whcbalance.balance)" @click="onSend" variant="primary">确认发行</b-button>
+            <b-button size="lg" class="mt-10 fr" :disabled="!(name && url && desc && amount && whcbalance.balance*1>0)" @click="onSend" variant="primary">确认发行</b-button>
           </div>
         </b-form>
       </div>
