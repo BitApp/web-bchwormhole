@@ -57,6 +57,7 @@
                         label-for="desc-input">
             <b-form-input id="desc-input"
                           type="text"
+                          maxlength="30"
                           v-model="desc"
                           placeholder="请填写Token描述">
             </b-form-input>
