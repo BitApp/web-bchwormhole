@@ -15,7 +15,7 @@ let serverApiDomain = "",
 
 if(process.env.NODE_ENV === "dev" || process.env.NODE_ENV === "development"){
     //开发环境
-    protocol = "https:"
+    protocol = "http:"
     clientApiDomain = ""
     serverApiDomain = ""
     //webSocketDomain = "ws://dev.viabtc.com:8008"
