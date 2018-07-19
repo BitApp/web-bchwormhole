@@ -88,6 +88,11 @@
         <div class="ta-c">即将上线</div>
       </b-tab>
     </b-tabs>
+
+    <div class="transaction-line mt-30">
+      <div>交易记录:</div>
+      <a v-if="trans" :href="'https://www.blocktrail.com/tBCC/tx/'+trans" target="_blank">{{trans}}</a>
+    </div>
   </div>
 </template>
 
@@ -131,6 +136,7 @@ export default {
       url: '',
       desc: '',
       fee: '1 WHC',
+      trans:'',
       amount: 10000
     }
   },
@@ -151,7 +157,8 @@ export default {
     });
   },
 
-  mounted() {
+  mounted(){
+    this.trans = localStorage.getItem('trans')
   },
 
   methods:{
@@ -161,7 +168,8 @@ export default {
       .get("/api/wormhole/sendfixedtoken?name="+this.name + "&amount="+this.amount + "&url="+this.url + "&data="+this.desc)
       .then(res => {
         if(!res.code){
-          alert('你的Token' + _this.name + '发行成功，' + '请去广场查看')
+          alert('你的Token' + _this.name + '发行成功，等待交易确认，可在区块浏览器中查看确认数')
+          _this.trans = res.data.data
         }
       }).catch(e=>{
         console.error(e)
