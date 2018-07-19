@@ -1,8 +1,8 @@
 <template>
   <div class="wh-index ta-c">
     <b-table striped hover 
-        sort-by.sync="propertyid"
-        sort-desc.sync="true" 
+        :sort-by.sync="sortBy"
+        :sort-desc.sync="sortDesc" 
         :fields="fields" 
         :items="properties">
       <template slot="url" slot-scope="item">
@@ -34,6 +34,8 @@ export default {
 
   data() {
     return {
+      sortBy: 'propertyid',
+      sortDesc: true,
       fields: {
         propertyid: {
           label: '序号'
