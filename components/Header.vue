@@ -2,8 +2,10 @@
   <header class="header">
     <div class="clearfix mt-20">
         <span class="va-m">
-          <span class="logo">虫洞工具</span>
-          <span class="ml-3 c-light">测试网络</span>
+          <b-link to="/" style="text-decoration:none">
+            <span class="logo">虫洞工具</span>
+            <span class="ml-3 c-light">测试网络</span>
+          </b-link>
         </span>
       <b-nav class="fr">
         <b-nav-item to="/" exact>Token广场</b-nav-item>

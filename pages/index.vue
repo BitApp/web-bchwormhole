@@ -2,7 +2,7 @@
   <div class="wh-index ta-c">
     <b-table striped hover :fields="fields" :items="properties">
       <template slot="url" slot-scope="item">
-          <a :href="item.value" target="_blank">{{item.value}}</a>
+        <a :href="item.value" target="_blank">{{item.value}}</a>
       </template>
   </b-table>
   </div>
@@ -55,7 +55,9 @@ export default {
     .then(res => {
       if(!res.code){
         return {
-          properties:res.data.data
+          properties:res.data.data.sort(function(a,b){
+            return b-a
+          })
         }
       }
     }).catch(e=>{
