@@ -58,7 +58,7 @@
             <b-form-input id="desc-input"
                           type="text"
                           v-model="desc"
-                          placeholder="请填写Token名称">
+                          placeholder="请填写Token描述">
             </b-form-input>
           </b-form-group>
           <b-form-group label="手续费:"
@@ -69,7 +69,7 @@
                           disabled
                           type="text"
                           v-model="fee"
-                          placeholder="请填写Token名称">
+                          placeholder="">
             </b-form-input>
           </b-form-group>
           <div class="button-line clearfix">
