@@ -168,8 +168,8 @@ export default {
       .get("/api/wormhole/sendfixedtoken?name="+this.name + "&amount="+this.amount + "&url="+this.url + "&data="+this.desc)
       .then(res => {
         if(!res.code){
-          alert('你的Token' + _this.name + '发行成功，等待交易确认，可在区块浏览器中查看确认数')
           _this.trans = res.data.data
+          alert('你的' + _this.name + '发行成功，等待交易确认，可在页面底部查看交易ID')
         }
       }).catch(e=>{
         console.error(e)
