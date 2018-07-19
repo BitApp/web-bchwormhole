@@ -119,7 +119,6 @@ export default {
 
   data() {
     return {
-      whcbalance: 0,
       name: '',
       url: '',
       desc: '',
