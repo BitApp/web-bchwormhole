@@ -3,6 +3,10 @@
     <div class="balance-line">
       <span class="fs-14 c-light">平台 WHC 余额:</span>
       <span class="fs-16 ml-3">{{ whcbalance.balance / 1e8 }} WHC</span>
+      <span v-if="whcbalance.balance == 0" class="c-red ml-5">
+        <span> WHC 余额为0，请先生成WHC</span>
+        <b-link class="ml-2" to="/generatewhc">去生成</b-link>
+      </span>
     </div>
     <b-tabs class="mt-30">
       <b-tab title="固定Token" active>
@@ -69,7 +73,7 @@
             </b-form-input>
           </b-form-group>
           <div class="button-line clearfix">
-            <b-button size="lg" class="mt-10 fr" :disabled="!(name && url && desc && amount)" @click="onSend" variant="primary">确认发行</b-button>
+            <b-button size="lg" class="mt-10 fr" :disabled="!(name && url && desc && amount && whcbalance.balance)" @click="onSend" variant="primary">确认发行</b-button>
           </div>
         </b-form>
       </div>
@@ -119,6 +123,9 @@ export default {
 
   data() {
     return {
+      whcbalance:{
+        balance:0
+      },
       name: '',
       url: '',
       desc: '',
