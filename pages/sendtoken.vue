@@ -91,7 +91,7 @@
 
     <div class="transaction-line mt-30 fs-16">
       <div>等待确认的Token:</div>
-      <a v-if="trans" v-for="(item,index) in trans" :key="index" :href="'https://www.blocktrail.com/tBCC/tx/'+trans" target="_blank">{{trans.name + '  ' + trans.tx}}</a>
+      <div v-if="trans" v-for="(item,index) in trans" :key="index"><a :href="'https://www.blocktrail.com/tBCC/tx/'+trans" target="_blank">{{item.name + '  ' + item.tx}}</a></div>
     </div>
   </div>
 </template>
