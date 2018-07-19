@@ -6,7 +6,7 @@
           <span class="ml-3 c-light">测试网络</span>
         </span>
       <b-nav class="fr">
-        <b-nav-item to="/">Token广场</b-nav-item>
+        <b-nav-item to="/" exact>Token广场</b-nav-item>
         <b-nav-item to="/generatewhc">生成WHC</b-nav-item>
         <b-nav-item to="/sendtoken">发行Token</b-nav-item>
         <b-nav-item to="/contact">联系我们</b-nav-item>
