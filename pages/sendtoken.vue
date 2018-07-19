@@ -2,7 +2,7 @@
   <div class="wh-page-sendtoken">
     <div class="balance-line">
       <span class="fs-14 c-light">平台 WHC 余额:</span>
-      <span class="fs-16 ml-3">{{ whcbalance }} WHC</span>
+      <span class="fs-16 ml-3">{{ whcbalance.balance / 1e8 }} WHC</span>
     </div>
     <b-tabs class="mt-30">
       <b-tab title="固定Token" active>
