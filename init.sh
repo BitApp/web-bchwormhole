@@ -1,0 +1,1 @@
+npm i -g pm2 && pm2 install pm2-logrotate && pm2 install pm2-server-monit && npm i

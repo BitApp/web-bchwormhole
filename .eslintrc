@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+      "eqeqeq": "warn",
+      "curly": "warn"
+  },
+  "plugins": [
+      "html"
+  ]
+}

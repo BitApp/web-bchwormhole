@@ -1,0 +1,91 @@
+{
+    "autoi18n_version": 3,
+    "components_Alert_vue": {},
+    "components_Footer_vue": {},
+    "components_Header_vue": {
+        "虫洞工具": "蟲洞工具",
+        "测试网络": "測試網絡",
+        "广场": "廣場",
+        "生成WHC": "生成WHC",
+        "发行Token": "發行Token",
+        "联系我们": "聯系我們"
+    },
+    "components_Loading_vue": {},
+    "components_Qrcode_vue": {},
+    "layouts_default_vue": {},
+    "layouts_error_vue": {},
+    "layouts_index_vue": {},
+    "pages_auth_confirm_vue": {
+        "确认信息": "確認信息",
+        "昵称:": "昵稱:",
+        "请填写昵称": "請填寫昵稱",
+        "邮箱:": "郵箱:",
+        "请填写邮箱地址": "請填寫郵箱地址",
+        "完善信息": "完善信息",
+        "确认": "確認",
+        "取消": "取消"
+    },
+    "pages_auth_fail_vue": {
+        "认证失败": "\n      認證失敗\n      ",
+        "重试": "重試"
+    },
+    "pages_auth_success_vue": {
+        "账户创建成功": "賬戶創建成功",
+        "账户创建成功，弹_71509267": "\n      賬戶創建成功，彈窗將會關閉，請點擊瀏覽器右上角 AppRoles 小圖標繼續完成錢包的創建過程（如下圖）。\n    ",
+        "知道了": "知道了"
+    },
+    "pages_contact_vue": {
+        "联系我们": "聯系我們",
+        "联系小助手加入虫_7bf6d6c9": "聯系小助手加入蟲洞交流群",
+        "专注数字货币应用_03975f0c": "專注數字貨幣應用生態"
+    },
+    "pages_generatewhc_vue": {
+        "生成WHC": "生成WHC",
+        "燃烧成功，你已获_e0123460": "燃燒成功，你已獲得 100 個 WHC，請前往發行Token",
+        "平台BCH余额:_01c255e2": "平台 BCH 餘額:",
+        "测试BCH捐赠地_5947d7bf": "測試 BCH 捐贈地址:",
+        "燃烧数量不可小于_8748b635": "\n        燃燒數量不可小於一個BCH，由於測試幣有限，每次燃燒只燃燒一個 BCH\n      "
+    },
+    "pages_getstart_vue": {
+        "微信": "微信",
+        "正在登录[pla_3d24aa89": "正在登錄[platform]..."
+    },
+    "pages_index_vue": {
+        "序号": "序號",
+        "Token名称": "Token名稱",
+        "官网": "官網",
+        "相关信息": "相關信息"
+    },
+    "pages_learnmore_vue": {
+        "ThisProm_931aea61": "\n    This Promise already save to the blockchain，no-none can changeable.This Promise already save to the blockchain，no-none can changeable.\n    "
+    },
+    "pages_my_promises_vue": {},
+    "pages_payed_success_vue": {},
+    "pages_readmore_vue": {},
+    "pages_sendtoken_vue": {
+        "发行Token": "發行Token",
+        "你的Token": "你的Token",
+        "发行成功，": "發行成功，",
+        "请去广场查看": "請去廣場查看",
+        "固定Token": "固定Token",
+        "Token特性:": "Token特性:",
+        "Token名称:": "Token名稱:",
+        "请填写Token_3f8b4f25": "請填寫Token名稱",
+        "Token数量:": "Token數量:",
+        "请填写Token_017600e5": "請填寫Token數量",
+        "Token官网:": "Token官網:",
+        "请填写Token_a0ea3a41": "請填寫Token官網",
+        "描述:": "描述:",
+        "手续费:": "手續費:",
+        "可众筹Token": "可衆籌Token",
+        "可管理Token": "可管理Token",
+        "平台WHC余额:_6cee6fb0": "平台 WHC 餘額:",
+        "确认发行": "確認發行",
+        "即将上线": "即將上線"
+    },
+    "pages_unlock_vue": {
+        "请求解锁您的Ap_60d205d4": "請求解鎖您的 AppRoles",
+        "输入密码解锁": "輸入密碼解鎖",
+        "解锁AppRol_b217241f": "\n          解鎖 AppRoles\n        "
+    }
+}

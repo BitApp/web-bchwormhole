@@ -1,0 +1,27 @@
+$brandGreen:#52cbca;
+$dark:#212a35;
+$light:#6f6f6f;
+$red:#e45555;
+$black:#192330;
+$gray:#6f6f6f;
+$gold:#ffbc32;
+
+@mixin color-red($val:#e45555){
+    color: $val !important;
+}
+
+@mixin color-green($val:#00b275){
+    color: $val !important;
+}
+
+@mixin color-gray($val:#6f6f6f){
+    color: $val !important;
+}
+
+@mixin color-black($val:#192330){
+    color: $val !important;
+}
+
+@mixin fs($val:14px){
+    font-size: $val !important
+}

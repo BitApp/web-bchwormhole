@@ -1,0 +1,66 @@
+<template>
+  <div class="wh-index ta-c">
+    <b-table striped hover :fields="fields" :items="properties"></b-table>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.wh-index {
+  padding: 30px;
+  width: 70%;
+  margin: 0 auto;
+}
+</style>
+
+<script>
+import Vue from "vue"
+import utils from "~/plugins/utils"
+import { mapState } from "vuex"
+
+export default {
+  head() {
+    return {
+      title: ""
+    }
+  },
+
+  data() {
+    return {
+      fields: {
+        propertyid: {
+          label: '序号'
+        },
+        name: {
+          label: 'Token名称'
+        },
+        url: {
+          label: '官网'
+        },
+        data: {
+          label: '相关信息'
+        }
+      },
+    }
+  },
+
+  asyncData({ req, app, query }) {
+    // properties
+    return app.axios
+    .init(req)
+    .get("/api/wormhole/listproperties")
+    .then(res => {
+      if(!res.code){
+        return {
+          properties:res.data.data
+        }
+      }
+    }).catch(e=>{
+      console.error(e)
+    });
+  },
+
+  mounted() {
+  }
+};
+</script>
+

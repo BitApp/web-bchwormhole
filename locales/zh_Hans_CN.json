@@ -1,0 +1,83 @@
+{
+    "autoi18n_version": 3,
+    "components_Alert_vue": {},
+    "components_Footer_vue": {},
+    "components_Header_vue": {
+        "虫洞工具": "虫洞工具",
+        "测试网络": "测试网络",
+        "广场": "广场",
+        "生成WHC": "生成WHC",
+        "发行Token": "发行Token",
+        "联系我们": "联系我们"
+    },
+    "layouts_default_vue": {},
+    "layouts_error_vue": {},
+    "layouts_index_vue": {},
+    "pages_auth_confirm_vue": {
+        "确认信息": "确认信息",
+        "昵称:": "昵称:",
+        "请填写昵称": "请填写昵称",
+        "邮箱:": "邮箱:",
+        "请填写邮箱地址": "请填写邮箱地址",
+        "完善信息": "完善信息",
+        "确认": "确认",
+        "取消": "取消"
+    },
+    "pages_auth_fail_vue": {
+        "认证失败": "\n      认证失败\n      ",
+        "重试": "重试"
+    },
+    "pages_auth_success_vue": {
+        "账户创建成功": "账户创建成功",
+        "账户创建成功，弹_71509267": "\n      账户创建成功，弹窗将会关闭，请点击浏览器右上角 AppRoles 小图标继续完成钱包的创建过程（如下图）。\n    ",
+        "知道了": "知道了"
+    },
+    "pages_contact_vue": {
+        "联系我们": "联系我们",
+        "联系小助手加入虫_7bf6d6c9": "联系小助手加入虫洞交流群",
+        "专注数字货币应用_03975f0c": "专注数字货币应用生态"
+    },
+    "pages_generatewhc_vue": {
+        "生成WHC": "生成WHC",
+        "燃烧成功，你已获_e0123460": "燃烧成功，你已获得 100 个 WHC，请前往发行Token",
+        "平台BCH余额:_01c255e2": "平台 BCH 余额:",
+        "测试BCH捐赠地_5947d7bf": "测试 BCH 捐赠地址:",
+        "燃烧数量不可小于_8748b635": "\n        燃烧数量不可小于一个BCH，由于测试币有限，每次燃烧只燃烧一个 BCH\n      "
+    },
+    "pages_getstart_vue": {
+        "微信": "微信",
+        "正在登录[pla_3d24aa89": "正在登录[platform]..."
+    },
+    "pages_index_vue": {
+        "序号": "序号",
+        "Token名称": "Token名称",
+        "官网": "官网",
+        "相关信息": "相关信息"
+    },
+    "pages_sendtoken_vue": {
+        "发行Token": "发行Token",
+        "你的Token": "你的Token",
+        "发行成功，": "发行成功，",
+        "请去广场查看": "请去广场查看",
+        "固定Token": "固定Token",
+        "Token特性:": "Token特性:",
+        "Token名称:": "Token名称:",
+        "请填写Token_3f8b4f25": "请填写Token名称",
+        "Token数量:": "Token数量:",
+        "请填写Token_017600e5": "请填写Token数量",
+        "Token官网:": "Token官网:",
+        "请填写Token_a0ea3a41": "请填写Token官网",
+        "描述:": "描述:",
+        "手续费:": "手续费:",
+        "可众筹Token": "可众筹Token",
+        "可管理Token": "可管理Token",
+        "平台WHC余额:_6cee6fb0": "平台 WHC 余额:",
+        "确认发行": "确认发行",
+        "即将上线": "即将上线"
+    },
+    "pages_unlock_vue": {
+        "请求解锁您的Ap_60d205d4": "请求解锁您的 AppRoles",
+        "输入密码解锁": "输入密码解锁",
+        "解锁AppRol_b217241f": "\n          解锁 AppRoles\n        "
+    }
+}
