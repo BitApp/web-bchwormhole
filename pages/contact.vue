@@ -1,7 +1,7 @@
 <template>
   <div class="wh-page-contact ta-c">
     <div class="wechat-line mt-60 ta-c">
-      <img src="~assets/imgs/wechat.jpeg" width="180">
+      <img src="~assets/imgs/wechat.jpg" width="180">
       <div class="title mt-20">联系小助手加入虫洞交流群</div>
     </div>
     <div class="title-line mt-60 ta-c">
