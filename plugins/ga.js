@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === "production") {
   ** Set the current page
   */
 
-  ga("create", "UA-50634980-1")
+  ga("create", "UA-50634980-3")
   ga("set", "page", location.href)
   ga("send", "pageview")
   /*
