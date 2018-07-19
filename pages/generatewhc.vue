@@ -25,11 +25,16 @@
         燃烧数量不可小于一个BCH，由于测试币有限，每次燃烧只燃烧一个 BCH
       </div>
       <div class="ta-c mt-30">
-        <b-button size="lg" class="" @click="burn" variant="primary">生成WHC</b-button>
+        <b-button size="lg" :disabled="burned" @click="burn" variant="primary">生成WHC</b-button>
       </div>
       <div class="mt-30 ml-20">
         <div class="text" style="padding: 0px;"><p>1.测试网络中，经过3个确认后，即可获得WHC</p><p>2.BCH:WHC的比例为1:100</p><p>3.最小燃烧数量为1BCH</p><p>4.平台测试BCH有限，此功能仅供体验，请勿疯狂生成WHC</p></div>
       </div>
+    </div>
+
+    <div class="transaction-line mt-30">
+      <div>交易记录:</div>
+      <a v-if="trans" href="" target="_blank">{{trans}}</a>
     </div>
   </div>
 </template>
@@ -76,7 +81,9 @@ export default {
     return {
       bchbalance: 0,
       number: 1,
-      whc: 100
+      whc: 100,
+      trans: '',
+      burned: false
     }
   },
 
@@ -104,7 +111,8 @@ export default {
       .then(res => {
         if(!res.code){
           alert('燃烧成功，你已获得 100 个 WHC，请前往发行Token')
-          _this.$route.push('/sendtoken')
+          _this.burned = true
+          _this.trans = res.data
         }
       }).catch(e=>{
         console.error(e)
