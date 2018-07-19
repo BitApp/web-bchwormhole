@@ -1,7 +1,7 @@
 {
   "apps" : [
     {
-      "name"      : "approles-web",
+      "name"      : "web-bchwormhole",
       "script"    : "app.js",
       "instances" : 0,
       "instance_var": "WEB_APPROLES",
@@ -11,8 +11,8 @@
         "logs",
         ".nuxt"
       ],
-      "error_file": "logs/web.approles.stderr.log",
-      "out_file"  : "logs/web.approles.stdout.log",
+      "error_file": "logs/web.bchwormhole.stderr.log",
+      "out_file"  : "logs/web.bchwormhole.stdout.log",
       "env": {
         "NODE_ENV": "dev"
       },
