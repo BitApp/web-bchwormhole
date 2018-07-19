@@ -22,7 +22,7 @@
         <span class="fw-bold">WHC</span>
       </div>
       <div class="mt-10 ml-20 c-red">
-        燃烧数量不可小于一个BCH，由于测试币有限，每次燃烧只燃烧一个 BCH
+        燃烧数量不可小于一个BCH，由于测试币有限，每次只能燃烧一个 BCH
       </div>
       <div class="ta-c mt-30">
         <b-button size="lg" :disabled="burned" @click="burn" variant="primary">生成WHC</b-button>
@@ -114,7 +114,7 @@ export default {
       .get("/api/wormhole/bch2whc")
       .then(res => {
         if(!res.code){
-          alert('燃烧成功，你已获得 100 个 WHC，请前往发行Token')
+          alert('燃烧成功，等待3个确认后即可获得 100 个 WHC')
           _this.burned = true
           _this.trans = res.data.data
           localStorage.setItem('trans', _this.trans)
