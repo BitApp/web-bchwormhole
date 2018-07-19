@@ -1,7 +1,10 @@
 <template>
   <div class="wh-index ta-c">
-    <b-table striped hover :sort-by.sync="propertyid"
-             :sort-desc.sync="true" :fields="fields" :items="properties">
+    <b-table striped hover 
+        sort-by.sync="propertyid"
+        sort-desc.sync="true" 
+        :fields="fields" 
+        :items="properties">
       <template slot="url" slot-scope="item">
         <a :href="item.value" target="_blank">{{item.value}}</a>
       </template>
