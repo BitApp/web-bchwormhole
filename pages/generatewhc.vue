@@ -34,7 +34,7 @@
 
     <div class="transaction-line mt-30">
       <div>交易记录:</div>
-      <a v-if="trans" href="" target="_blank">{{trans}}</a>
+      <a v-if="trans" :href="'https://www.blocktrail.com/tBCC/tx/'+trans" target="_blank">{{trans}}</a>
     </div>
   </div>
 </template>
@@ -116,7 +116,7 @@ export default {
         if(!res.code){
           alert('燃烧成功，你已获得 100 个 WHC，请前往发行Token')
           _this.burned = true
-          _this.trans = res.data
+          _this.trans = res.data.data
           localStorage.setItem('trans', _this.trans)
         }
       }).catch(e=>{
