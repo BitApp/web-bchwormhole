@@ -90,8 +90,8 @@
     </b-tabs>
 
     <div class="transaction-line mt-30 fs-16">
-      <div>交易记录:</div>
-      <a v-if="trans" :href="'https://www.blocktrail.com/tBCC/tx/'+trans" target="_blank">{{trans}}</a>
+      <div>等待确认的Token:</div>
+      <a v-if="trans" v-for="(item,index) in trans" :key="index" :href="'https://www.blocktrail.com/tBCC/tx/'+trans" target="_blank">{{trans.name + '  ' + trans.tx}}</a>
     </div>
   </div>
 </template>
@@ -136,7 +136,7 @@ export default {
       url: '',
       desc: '',
       fee: '1 WHC',
-      trans:'',
+      trans:[],
       amount: 10000
     }
   },
@@ -158,7 +158,7 @@ export default {
   },
 
   mounted(){
-    this.trans = localStorage.getItem('trans')
+    this.trans = localStorage.getItem('token.trans') ? JSON.parse(localStorage.getItem('token.trans')) : []
   },
 
   methods:{
@@ -168,7 +168,8 @@ export default {
       .get("/api/wormhole/sendfixedtoken?name="+this.name + "&amount="+this.amount + "&url="+this.url + "&data="+this.desc)
       .then(res => {
         if(!res.code){
-          _this.trans = res.data.data
+          _this.trans.push({tx: res.data.data, name: _this.name})
+          localStorage.setItem('token.trans', JSON.stringify(_this.trans))
           alert('你的' + _this.name + '发行成功，等待交易确认，可在页面底部查看交易ID')
         }
       }).catch(e=>{

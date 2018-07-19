@@ -104,7 +104,7 @@ export default {
   },
 
   mounted(){
-    this.trans = localStorage.getItem('trans')
+    this.trans = localStorage.getItem('whc.trans')
   },
 
   methods: {
@@ -117,7 +117,7 @@ export default {
           alert('燃烧成功，等待3个确认后即可获得 100 个 WHC')
           _this.burned = true
           _this.trans = res.data.data
-          localStorage.setItem('trans', _this.trans)
+          localStorage.setItem('whc.trans', _this.trans)
         }
       }).catch(e=>{
         console.error(e)
