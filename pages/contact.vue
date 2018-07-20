@@ -7,6 +7,9 @@
     <div class="title-line mt-60 ta-c">
       <div class="title">BitApp Team</div>
       <div class="title mt-10">专注数字货币应用生态</div>
+      <div class="mt-10">
+        <a href="https://github.com/bitapp" target="_blank">https://github.com/bitapp</a>
+      </div>
     </div>
   </div>
 </template>

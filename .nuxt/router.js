@@ -6,6 +6,7 @@ Vue.use(Router)
 const _154922c3 = () => import('../pages/sendtoken.vue' /* webpackChunkName: "pages/sendtoken" */).then(m => m.default || m)
 const _b1182622 = () => import('../pages/generatewhc.vue' /* webpackChunkName: "pages/generatewhc" */).then(m => m.default || m)
 const _ab5c031c = () => import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */).then(m => m.default || m)
+const _2c7e9c4e = () => import('../pages/docs.vue' /* webpackChunkName: "pages/docs" */).then(m => m.default || m)
 const _2681feb8 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
@@ -80,6 +81,11 @@ export function createRouter () {
 			path: "/contact",
 			component: _ab5c031c,
 			name: "contact"
+		},
+		{
+			path: "/docs",
+			component: _2c7e9c4e,
+			name: "docs"
 		},
 		{
 			path: "/",
