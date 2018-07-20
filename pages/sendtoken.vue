@@ -28,6 +28,7 @@
             <b-form-input id="name-input"
                           type="text"
                           v-model="name"
+                          maxlength="6"
                           placeholder="请填写Token名称">
             </b-form-input>
           </b-form-group>

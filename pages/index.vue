@@ -6,7 +6,7 @@
         :fields="fields" 
         :items="properties">
       <template slot="url" slot-scope="item">
-        <a :href="item.value" target="_blank">{{item.value}}</a>
+        <a :href="/http/i.test(item.value) ? item.value : 'http://'+item.value" target="_blank">{{item.value}}</a>
       </template>
   </b-table>
   </div>
