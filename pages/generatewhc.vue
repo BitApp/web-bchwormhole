@@ -25,7 +25,7 @@
         燃烧数量不可小于一个BCH，由于测试币有限，每次只能燃烧一个 BCH
       </div>
       <div class="ta-c mt-30">
-        <b-button size="lg" :disabled="burned || bchbalance == 0" @click="burn" variant="primary">生成WHC</b-button>
+        <b-button size="lg" :disabled="burned || bchbalance < 1" @click="burn" variant="primary">生成WHC</b-button>
       </div>
       <div class="mt-30 ml-20">
         <div class="text" style="padding: 0px;"><p>1.测试网络中，经过3个确认后，即可获得WHC</p><p>2.BCH:WHC的比例为1:100</p><p>3.最小燃烧数量为1BCH</p><p>4.平台测试BCH有限，此功能仅供体验，请勿疯狂生成WHC</p></div>
