@@ -1,22 +1,30 @@
 <template>
-  <div class="wh-index ta-c">
-    <b-table striped hover 
-        :sort-by.sync="sortBy"
-        :sort-desc.sync="sortDesc" 
-        :fields="fields" 
-        :items="properties">
-      <template slot="url" slot-scope="item">
-        <a :href="/http/i.test(item.value) ? item.value : 'http://'+item.value" target="_blank">{{item.value}}</a>
-      </template>
-  </b-table>
+  <div class="wh-page-contact ta-c">
+    <div class="wechat-line mt-60 ta-c">
+      <img src="~assets/imgs/wechat.png" width="180">
+      <div class="title mt-20">请关注我们正式版本的发布</div>
+    </div>
+    <div class="title-line mt-60 ta-c">
+      <div class="title">BitApp Team</div>
+      <div class="title mt-10">专注数字货币应用生态</div>
+      <div class="mt-10">
+        <a href="https://github.com/bitapp" target="_blank">https://github.com/bitapp</a>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.wh-index {
+.wh-page-contact {
   padding: 30px;
-  width: 70%;
-  margin: 0 auto;
+  .wechat-line{
+    .title{
+      font-size: 20px;
+    }
+  }
+  .title-line{
+    font-size: 16px;
+  }
 }
 </style>
 
@@ -28,45 +36,18 @@ import { mapState } from "vuex"
 export default {
   head() {
     return {
-      title: "Token广场"
+      title: "联系我们"
     }
   },
 
   data() {
     return {
-      sortBy: 'propertyid',
-      sortDesc: true,
-      fields: {
-        propertyid: {
-          label: '序号'
-        },
-        name: {
-          label: 'Token名称'
-        },
-        url: {
-          label: '官网'
-        },
-        data: {
-          label: '相关信息'
-        }
-      },
     }
   },
 
   asyncData({ req, app, query }) {
-    // properties
-    return app.axios
-    .init(req)
-    .get("/api/wormhole/listproperties")
-    .then(res => {
-      if(!res.code){
-        return {
-          properties:res.data.data
-        }
-      }
-    }).catch(e=>{
-      console.error(e)
-    });
+    return {
+    }
   },
 
   mounted() {
