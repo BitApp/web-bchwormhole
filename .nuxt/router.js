@@ -3,11 +3,11 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _154922c3 = () => import('../pages/sendtoken.vue' /* webpackChunkName: "pages/sendtoken" */).then(m => m.default || m)
-const _b1182622 = () => import('../pages/generatewhc.vue' /* webpackChunkName: "pages/generatewhc" */).then(m => m.default || m)
-const _ab5c031c = () => import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */).then(m => m.default || m)
-const _2c7e9c4e = () => import('../pages/docs.vue' /* webpackChunkName: "pages/docs" */).then(m => m.default || m)
-const _2681feb8 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _4a4c404d = () => import('../pages/sendtoken.vue' /* webpackChunkName: "pages/sendtoken" */).then(m => m.default || m)
+const _afb4600e = () => import('../pages/generatewhc.vue' /* webpackChunkName: "pages/generatewhc" */).then(m => m.default || m)
+const _989a1308 = () => import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */).then(m => m.default || m)
+const _3f2fc60f = () => import('../pages/docs.vue' /* webpackChunkName: "pages/docs" */).then(m => m.default || m)
+const _4532732e = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
 
@@ -69,27 +69,27 @@ export function createRouter () {
     routes: [
 		{
 			path: "/sendtoken",
-			component: _154922c3,
+			component: _4a4c404d,
 			name: "sendtoken"
 		},
 		{
 			path: "/generatewhc",
-			component: _b1182622,
+			component: _afb4600e,
 			name: "generatewhc"
 		},
 		{
 			path: "/contact",
-			component: _ab5c031c,
+			component: _989a1308,
 			name: "contact"
 		},
 		{
 			path: "/docs",
-			component: _2c7e9c4e,
+			component: _3f2fc60f,
 			name: "docs"
 		},
 		{
 			path: "/",
-			component: _2681feb8,
+			component: _4532732e,
 			name: "index"
 		}
     ],

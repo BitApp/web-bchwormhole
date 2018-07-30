@@ -12,7 +12,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 import { createStore } from './store.js'
 
 /* Plugins */
-import nuxt_plugin_bootstrapvue_4679baae from 'nuxt_plugin_bootstrapvue_4679baae' // Source: ./bootstrap-vue.js
+import nuxt_plugin_bootstrapvue_1b64be42 from 'nuxt_plugin_bootstrapvue_1b64be42' // Source: ./bootstrap-vue.js
 import nuxt_plugin_cookies_1f907659 from 'nuxt_plugin_cookies_1f907659' // Source: ../plugins/cookies
 import nuxt_plugin_i18n_6a80ea94 from 'nuxt_plugin_i18n_6a80ea94' // Source: ../plugins/i18n
 import nuxt_plugin_exchangeAxios_3bbca05d from 'nuxt_plugin_exchangeAxios_3bbca05d' // Source: ../plugins/exchangeAxios
@@ -155,7 +155,7 @@ async function createApp (ssrContext) {
 
   // Plugin execution
   
-  if (typeof nuxt_plugin_bootstrapvue_4679baae === 'function') await nuxt_plugin_bootstrapvue_4679baae(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_1b64be42 === 'function') await nuxt_plugin_bootstrapvue_1b64be42(app.context, inject)
   if (typeof nuxt_plugin_cookies_1f907659 === 'function') await nuxt_plugin_cookies_1f907659(app.context, inject)
   if (typeof nuxt_plugin_i18n_6a80ea94 === 'function') await nuxt_plugin_i18n_6a80ea94(app.context, inject)
   if (typeof nuxt_plugin_exchangeAxios_3bbca05d === 'function') await nuxt_plugin_exchangeAxios_3bbca05d(app.context, inject)

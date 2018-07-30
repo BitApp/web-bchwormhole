@@ -2,7 +2,7 @@
   <div class="wh-page-contact ta-c">
     <div class="wechat-line mt-60 ta-c">
       <img src="~assets/imgs/wechat.png" width="180">
-      <div class="title mt-20">请关注我们正式版本的发布</div>
+      <div class="title mt-20">请扫描二维码关注我们正式版本的发布</div>
     </div>
     <div class="title-line mt-60 ta-c">
       <div class="title">BitApp Team</div>

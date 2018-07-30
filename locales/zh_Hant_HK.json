@@ -58,11 +58,9 @@
         "正在登录[pla_3d24aa89": "正在登錄[platform]..."
     },
     "pages_index_vue": {
-        "Token广场": "Token廣場",
-        "序号": "序號",
-        "Token名称": "Token名稱",
-        "官网": "官網",
-        "相关信息": "相關信息"
+        "联系我们": "聯系我們",
+        "请扫描二维码关注_9bfe3d5f": "請掃描二維碼關注我們正式版本的發布",
+        "专注数字货币应用_03975f0c": "專注數字貨幣應用生態"
     },
     "pages_learnmore_vue": {
         "ThisProm_931aea61": "\n    This Promise already save to the blockchain，no-none can changeable.This Promise already save to the blockchain，no-none can changeable.\n    "
